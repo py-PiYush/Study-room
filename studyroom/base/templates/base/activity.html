@@ -1,4 +1,4 @@
-{% extends 'main.html' %} {% block content %}
+{% extends 'main.html' %} {% load static %} {% block content %}
 <main class="layout">
   <div class="container">
     <div class="layout__box">
@@ -31,7 +31,7 @@
               class="roomListRoom__author"
             >
               <div class="avatar avatar--small">
-                <img src="https://randomuser.me/api/portraits/women/11.jpg" />
+                <img src="{% static 'images/avatar.svg' %}" />
               </div>
               <p>
                 @{{message.user}}
